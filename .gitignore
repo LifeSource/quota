@@ -1,0 +1,7 @@
+*.swp
+*.[oa]
+~
+*.tmp
+node_modules/
+public/
+dist/

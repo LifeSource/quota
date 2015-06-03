@@ -2,6 +2,7 @@
 *.[oa]
 ~
 *.tmp
+bower_components/
 node_modules/
 public/
 dist/

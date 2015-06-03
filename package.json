@@ -1,0 +1,14 @@
+{
+  "name": "quota",
+  "version": "1.0.0",
+  "description": "A simple web application for display timeless quotes.",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "quotes"
+  ],
+  "author": "Kenrick Wu",
+  "license": "ISC"
+}

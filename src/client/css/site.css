@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/images/zen1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.container {
+  border-radius: 15px;
+  width: 1200px;
+  padding: 0;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+}
+
+#navigation {
+  background: rgba(255,255,0,0.3);
+}
+
+#navigation h1 {
+  font-size: 60px;
+  color: #fff;
+  margin-left: 50px;
+  font-family: cursive, sans-serif;
+}
+#navList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  float: right;
+}
+.quote {
+  margin: 0;
+  font-size: 80px;
+  text-shadow: 2px 2px #ccc;
+  font-family: cursive, sans-serif;
+}
+
+.quoteMessage {
+  padding: 100px;
+}
+
+.quoteSource {
+  padding-right: 100px;
+  text-align: right;
+}

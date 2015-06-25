@@ -1,0 +1,25 @@
+{
+  "name": "quota",
+  "version": "1.0.0",
+  "authors": [
+    "Kenrick Wu <kenrick.wu@gmail.com>"
+  ],
+  "description": "quotes",
+  "keywords": [
+    "quotes"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "angular-resource": "~1.4.0",
+    "angular-route": "~1.4.0"
+  }
+}

@@ -1,28 +1,23 @@
 (function () {
-	"use strict";
+    "use strict";
 
-	var module = angular.module("app.common");
+    angular
+        .module("app.common")
+        .factory("quoteService", ["$http", quoteService]);
 
-	var quoteService = function ($http) {
-		
-		var api = "/api/quotes";
+    function quoteService($http) {
 
-		var query = function () {
-			return $http.get(api).then(function (response) {
-				return response.data;
-			});
-		};
+        var api = "/api/quotes";
 
-		var get = function (id) {
-			
-		};
+        var query = function () {
+            return $http.get(api).then(function (response) {
+                return response.data;
+            });
+        };
 
+        return {
+            query: query
+        };
+    }
 
-		return {
-			query: query,
-			get: get
-		};
-	};
-
-	module.factory("quoteService", ["$http", quoteService]);
 }());

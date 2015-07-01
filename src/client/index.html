@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en" data-ng-app="app">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Quota</title>
-	<!-- bower:css -->
-	<!-- endbower -->
+    <meta charset="UTF-8">
+    <title>Quota</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
 
-	<!-- inject:css -->
-	<link rel="stylesheet" href="/src/client/css/site.css">
-	<!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/src/client/css/site.css">
+    <!-- endinject -->
 </head>
-<body >
-	<div class="container">
-		<section id="main">
-			<div data-ng-view=""></div>
-		</section>
 
-		<nav id="navigation">
-			<h1 class="title">Quota</h1>
-			<ul id="navList">
-				<li>about</li>
-			</ul>
-		</nav>
-	</div>
-	<!-- bower:js-->
-	<script src="/bower_components/angular/angular.js"></script>
-	<script src="/bower_components/angular-mocks/angular-mocks.js"></script>
-	<script src="/bower_components/angular-resource/angular-resource.js"></script>
-	<script src="/bower_components/angular-route/angular-route.js"></script>
-	<!-- endbower -->
+<body>
+    <div class="container">
+        <section id="main">
+            <div data-ng-view=""></div>
+        </section>
 
-	<!-- inject:js-->
-	<script src="/src/client/app/common/app.common.js"></script>
-	<script src="/src/client/app/common/services/quoteService.js"></script>
-	<script src="/src/client/app/app.js"></script>
-	<script src="/src/client/app/home/homeController.js"></script>
-	<!-- endinject -->
+        <nav id="navigation">
+            <h1 class="title">Quota</h1>
+        </nav>
+    </div>
+    <!-- bower:js-->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower -->
+
+    <!-- inject:js-->
+    <script src="/src/client/app/common/common.module.js"></script>
+    <script src="/src/client/app/common/services/quoteService.js"></script>
+    <script src="/src/client/app/common/services/randomGeneratorService.js"></script>
+    <script src="/src/client/app/app.module.js"></script>
+    <script src="/src/client/app/home/homeController.js"></script>
+    <!-- endinject -->
 </body>
+
 </html>

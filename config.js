@@ -33,7 +33,7 @@ module.exports = function () {
 		database: database,
 		root: root,
 		server: server,
-		nodeServer: server + "server.js",
+		nodeServer: server + "app.js",
 		nodeModules: nodeModules,
 		bowerComponents: bowerComponents,
 		ignore: ignore,

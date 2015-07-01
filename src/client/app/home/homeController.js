@@ -1,19 +1,38 @@
 (function () {
-	"use strict";
+    "use strict";
 
-	var app = angular.module("app");
+    angular
+        .module("app")
+        .controller("HomeController", ["quoteService", "randomGeneratorService", "$interval", HomeController]);
 
-	var HomeController = function (quoteService) {
-		
-		var vm = this;
+    function HomeController(quoteService, randomGeneratorService, $interval) {
 
-		vm.message = "HomeController";
-	
-		quoteService.query().then(function (data) {
-			vm.quotes = data;
-		});
-	};
+        var vm = this;
 
-	app.controller("HomeController", ["quoteService", HomeController]);
+        vm.countDown = 10;
 
+        quoteService.query().then(function (data) {
+            vm.quotes = data;
+            generateRandomQuote();
+        });
+
+        startCountDown();
+
+        function decrementCountDown() {
+            vm.countDown -= 1;
+            if (vm.countDown < 1) {
+                generateRandomQuote();
+                vm.countDown = 10;
+            }
+        }
+
+        function startCountDown() {
+            $interval(decrementCountDown, 1000);
+        }
+
+        function generateRandomQuote() {
+            var randomNumber = randomGeneratorService.generateRandomNumber(0, vm.quotes.length);
+            vm.randomQuote = vm.quotes[randomNumber];
+        }
+    }
 }());
